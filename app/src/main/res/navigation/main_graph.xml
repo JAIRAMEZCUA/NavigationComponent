@@ -18,15 +18,6 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment2"
             app:destination="@id/secondFragment" />
-        <argument
-            android:name="name"
-            app:argType="string"
-            android:defaultValue="empty"
-            />
-        <argument
-            android:name="edad"
-            app:argType="integer"
-            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -39,6 +30,11 @@
             app:destination="@id/thirdFragment"
             app:enterAnim="@animator/nav_default_pop_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
+
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Guest" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"

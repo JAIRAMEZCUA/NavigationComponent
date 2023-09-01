@@ -21,7 +21,7 @@ class FirstFragment : Fragment() {
 //            TODO SAFE FRAGMENT CREAN ESTAS CLASES POR DETRAS
             findNavController().navigate(
                 FirstFragmentDirections.actionFirstFragmentToSecondFragment2(
-                    edad = 1
+                    name = "JAIR"
                 )
             )
         }
