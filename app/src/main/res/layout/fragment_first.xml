@@ -3,10 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,8 +26,6 @@
             android:layout_height="0dp"
             android:layout_above="@+id/tbl_dots"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@color/white"
             android:visibility="visible" />
 
@@ -45,4 +39,8 @@
             app:tabIndicatorHeight="0dp"
             app:tabMode="fixed" />
     </RelativeLayout>
+
+    <data>
+
+    </data>
 </layout>

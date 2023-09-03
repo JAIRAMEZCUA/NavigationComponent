@@ -27,8 +27,8 @@ class InstructionsSectionFragment : Fragment() {
     @DrawableRes
     private var imageId: Int? = null
 
-
     private lateinit var binding: FragmentInstructionsSectionBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -57,9 +57,10 @@ class InstructionsSectionFragment : Fragment() {
         }
     }
 
-    fun requestFocus() {
-        binding.tvInstructionsText.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
-    }
+    //TODO to accesibility
+    /*   fun requestFocus() {
+           binding.tvInstructionsText.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
+       }*/
 
     companion object {
         /**

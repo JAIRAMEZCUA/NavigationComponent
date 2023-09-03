@@ -2,8 +2,8 @@
 <resources>
     <array name="instructions_drawables">
         <item>@drawable/ic_instructions_document_1</item>
-        <item>@drawable/ic_instructions_document_2</item>
-        <item>@drawable/ic_instructions_document_3</item>
+        <item>@drawable/ic_face_detected</item>
+        <item>@drawable/ic_face_not_detected</item>
     </array>
     <array name="instructions_text">
         <item>@string/sign_instructions_instr1</item>

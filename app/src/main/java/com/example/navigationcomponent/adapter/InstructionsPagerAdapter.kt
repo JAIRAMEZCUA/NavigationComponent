@@ -13,7 +13,8 @@ class InstructionsPagerAdapter(parent: Fragment, list: Array<String>, drawables:
 
     init {
         for (num in list.indices) {
-            val res = drawables?.getResourceId(num, R.drawable.ic_instructions_document_1)
+            //getResourceId index and default value
+            val res = drawables?.getResourceId(num, R.drawable.ic_launcher_foreground)
             sections.add(
                 InstructionsSectionFragment.newInstance(
                     list[num],
@@ -23,9 +24,10 @@ class InstructionsPagerAdapter(parent: Fragment, list: Array<String>, drawables:
         }
     }
 
-    fun requestFocus(position: Int) {
-        (sections[position] as InstructionsSectionFragment).requestFocus()
-    }
+    //TODO PARA ACCESIBILIDAD
+    /*   fun requestFocus(position: Int) {
+           (sections[position] as InstructionsSectionFragment).requestFocus()
+       }*/
 
     override fun getItemCount(): Int {
         return sections.size

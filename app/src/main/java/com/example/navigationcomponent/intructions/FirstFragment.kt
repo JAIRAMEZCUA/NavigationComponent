@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -25,9 +26,8 @@ class FirstFragment : Fragment() {
         return binding.root
     }
 
-    private var first = false
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.btnInstructionsContinue.isEnabled = false
         binding.btnInstructionsContinue.setOnClickListener {
 //            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
 //            TODO SAFE FRAGMENT CREAN ESTAS CLASES POR DETRAS
@@ -55,17 +55,14 @@ class FirstFragment : Fragment() {
                 positionOffset: Float,
                 positionOffsetPixels: Int,
             ) {
-                if (positionOffsetPixels == 0) {
-                    if (!first) {
-                        first = true
-                        return
-                    }
+                if (binding.vpInstructions.currentItem == 0) {
+                    return
+                } else {
                     binding.btnInstructionsContinue.isEnabled =
                         position == (binding.vpInstructions.adapter as InstructionsPagerAdapter).itemCount - 1
-                    (binding.vpInstructions.adapter as InstructionsPagerAdapter).requestFocus(
-                        position
-                    )
+                    // TODO Esta linea es para la accesiillidad que se haga el requestfocus (binding.vpInstructions.adapter as InstructionsPagerAdapter).requestFocus(position)
                 }
+
             }
         })
 

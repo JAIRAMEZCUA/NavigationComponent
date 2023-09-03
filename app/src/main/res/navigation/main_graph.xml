@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.navigationcomponent.SecondFragment"
+        android:name="com.example.navigationcomponent.instructions2.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second">
 
