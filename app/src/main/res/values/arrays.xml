@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="instructions_drawables">
+        <item>@drawable/ic_instructions_document_1</item>
+        <item>@drawable/ic_instructions_document_2</item>
+        <item>@drawable/ic_instructions_document_3</item>
+    </array>
+    <array name="instructions_text">
+        <item>@string/sign_instructions_instr1</item>
+        <item>@string/sign_instructions_instr2</item>
+        <item>@string/sign_instructions_instr3</item>
+    </array>
+</resources>

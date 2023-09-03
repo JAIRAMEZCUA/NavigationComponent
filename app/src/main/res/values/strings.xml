@@ -1,5 +1,13 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">NavigationComponent</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="sign_instructions_instr1" tools:ignore="ResourceName">Una vez que inicies el proceso de firma, <b>contarás con 5 minutos para concluirlo</b>; si tardas más tiempo deberás empezar de nuevo.\n\n<b>Si interrumpes el proceso</b> al cerrar, cambiar de aplicación, contestar llamada, etc., este se reiniciará para garantizar tu seguridad.</string>
+    <string name="sign_instructions_instr2" tools:ignore="ResourceName">El proceso de firma consta de un paso: <b>la firma autógrafa</b>. Este es grabado en video por la cámara frontal de tu dispositivo.</string>
+    <string name="sign_instructions_instr3" tools:ignore="ResourceName">La aplicación utiliza una herramienta de <b>reconocimiento facial</b> durante el proceso de firma, por lo que debes sostener la tableta o dispositivo como se indica en la imagen de arriba en todo momento. <b>Evita el uso de gorras y gafas de sol</b>.</string>
+    <string name="sign_instructions_instr4" tools:ignore="ResourceName">Si durante alguno de los pasos transcurren <b>más de 2 segundos\nsin que se detecte tu rostro</b>, deberás hacerlo nuevamente.</string>
+    <string name="sign_instructions_instr5" tools:ignore="ResourceName">Deberás seguir todas las instrucciones anteriores para\n<b>garantizar que la firma tenga validez legal</b>.</string>
+
 </resources>
