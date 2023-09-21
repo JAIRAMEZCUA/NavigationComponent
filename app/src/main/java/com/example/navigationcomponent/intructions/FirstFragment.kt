@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.navigationcomponent.R
-import com.example.navigationcomponent.adapter.InstructionsPagerAdapter
+import com.example.navigationcomponent.intructions.adapter.InstructionsPagerAdapter
 import com.example.navigationcomponent.databinding.FragmentFirstBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

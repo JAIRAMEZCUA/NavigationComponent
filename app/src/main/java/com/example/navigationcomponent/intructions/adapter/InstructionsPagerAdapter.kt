@@ -1,4 +1,4 @@
-package com.example.navigationcomponent.adapter
+package com.example.navigationcomponent.intructions.adapter
 
 import android.content.res.TypedArray
 import androidx.fragment.app.Fragment
